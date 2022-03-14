@@ -56,6 +56,19 @@ return [
             'throw' => false,
         ],
 
+        'oss' => [
+            'driver'            => 'oss',
+            'access_key_id'     => env('OSS_ACCESS_KEY_ID'),           // Required, 阿里云的AccessKeyId
+            'access_key_secret' => env('OSS_ACCESS_KEY_SECRET'),       // Required, 阿里云的AccessKeySecret
+            'bucket'            => env('OSS_BUCKET'),                  // Required, 对象存储的Bucket, 示例: my-bucket
+            'endpoint'          => env('OSS_ENDPOINT'),                // Required, 对象存储的Endpoint, 示例: oss-cn-shanghai.aliyuncs.com
+            'internal'          => env('OSS_INTERNAL', null),          // Optional, 内网上传地址, 示例: oss-cn-shanghai-internal.aliyuncs.com
+            'domain'            => env('OSS_DOMAIN', null),            // Optional, 绑定域名, 示例: oss.my-domain.com
+            'use_ssl'           => env('OSS_SSL', false),              // Optional, 是否使用HTTPS
+            'prefix'            => env('OSS_PREFIX', ''),              // Optional, 统一存储地址前缀
+            'reverse_proxy'     => env('OSS_REVERSE_PROXY', false),    // Optional, 域名是否使用NGINX代理绑定
+        ],
+
     ],
 
     /*

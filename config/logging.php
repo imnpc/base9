@@ -114,6 +114,11 @@ return [
         'emergency' => [
             'path' => storage_path('logs/laravel.log'),
         ],
+
+        'smslog' => [
+            'driver' => 'single',
+            'path' => storage_path('logs/smslog.log'),
+        ],
     ],
 
 ];
