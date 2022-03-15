@@ -78,8 +78,8 @@ class UserController extends AdminController
                 $actions->add(new Restore());
                 $actions->add(new Destroy());
             }
-            $actions->add(new WalletLog);
-            $actions->add(new Money);
+//            $actions->add(new WalletLog);
+//            $actions->add(new Money);
         });
 
         $grid->model()->orderBy('id', 'desc');// 按照 ID 倒序
@@ -147,7 +147,7 @@ class UserController extends AdminController
                 return [$user->id => $user->mobile];
             }
         })->ajax('/admin/api/users');
-       
+
         $states = [
             'on' => ['value' => 0, 'text' => '启用', 'color' => 'primary'],
             'off' => ['value' => 1, 'text' => '禁用', 'color' => 'danger'],
@@ -156,7 +156,7 @@ class UserController extends AdminController
         $form->switch('status', __('Status'))->states($states);
         $form->display('last_login_at', __('Last login at'));
         $form->display('last_login_ip', __('Last login ip'));
-
+//        $form->editor('content');
         // 保存前回调 设置未填写参数的默认值
         $form->saving(function (Form $form) {
             if (empty($form->nickname)) {

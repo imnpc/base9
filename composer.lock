@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "51ac8c93603fff3fd22bd647f910d7cd",
+    "content-hash": "41c5ac1f209f3a2ec6f11c0ec1250b03",
     "packages": [
         {
             "name": "aliyuncs/oss-sdk-php",
@@ -2155,6 +2155,115 @@
                 "source": "https://github.com/ichynul/row-table/tree/1.1.9"
             },
             "time": "2020-06-08T12:19:21+00:00"
+        },
+        {
+            "name": "imnpc/laravel-ueditor",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/imnpc/laravel-ueditor.git",
+                "reference": "9363a6bbe33a9fec9850241429843dcf42628f98"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/imnpc/laravel-ueditor/zipball/9363a6bbe33a9fec9850241429843dcf42628f98",
+                "reference": "9363a6bbe33a9fec9850241429843dcf42628f98",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "~5.5|~6.0|~7.0|~8.0|~9.0"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "^1.10"
+            },
+            "suggest": {
+                "overtrue/laravel-filesystem-qiniu": "如果你想要使用七牛云存储，也许你需要安装它哦~"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Codingyu\\LaravelUEditor\\UEditorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Codingyu\\LaravelUEditor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "codingyu",
+                    "email": "everceyu@gmail.com"
+                }
+            ],
+            "description": "UEditor integration for Laravel.",
+            "support": {
+                "source": "https://github.com/imnpc/laravel-ueditor/tree/2.0.3"
+            },
+            "time": "2022-03-15T06:04:38+00:00"
+        },
+        {
+            "name": "imnpc/ueditor",
+            "version": "3.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/imnpc/UEditor.git",
+                "reference": "b0067ded887d3d5ac46947aed6fc3b5c6f823117"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/imnpc/UEditor/zipball/b0067ded887d3d5ac46947aed6fc3b5c6f823117",
+                "reference": "b0067ded887d3d5ac46947aed6fc3b5c6f823117",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "imnpc/laravel-ueditor": "~2.0",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Codingyu\\Ueditor\\UeditorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Codingyu\\Ueditor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "codingyu",
+                    "email": "everceyu@gmail.com"
+                }
+            ],
+            "description": "UEditor extension for laravel-admin",
+            "homepage": "https://github.com/imnpc/UEditor",
+            "keywords": [
+                "extension",
+                "laravel-admin",
+                "ueditor"
+            ],
+            "support": {
+                "source": "https://github.com/imnpc/UEditor/tree/3.0.3"
+            },
+            "time": "2022-03-15T06:07:03+00:00"
         },
         {
             "name": "intervention/image",
