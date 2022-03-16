@@ -25,7 +25,7 @@ Encore\Admin\Form::forget(['map']);
 Admin::navbar(function (\Encore\Admin\Widgets\Navbar $navbar) {
     if(Admin::user()){
         if(Admin::user()->isAdministrator()){
-            $navbar->right(Nav\Link::make(__('Config'), 'configx/edit'));
+            $navbar->right(Nav\Link::make(__('Config'), 'configx/edit/0'));
         }
     }
 
