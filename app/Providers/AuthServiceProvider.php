@@ -31,12 +31,13 @@ class AuthServiceProvider extends ServiceProvider
             Passport::routes();// 中间件处理更改 Passport 路由 返回的信息格式
         });
 
-        // access_token 过期时间
+        // token 认证有效期 365 天
         Passport::tokensExpireIn(now()->addDays(365));
-        // refreshTokens 过期时间
+        // 刷新 token 认证有效期 400 天
         Passport::refreshTokensExpireIn(now()->addDays(400));
-        //
-        Passport::personalAccessTokensExpireIn(now()->addMonths(6));
+        // 设置令牌过期时间 1 年
+        Passport::personalAccessTokensExpireIn(now()->addMonths(12));
+        
         Gate::guessPolicyNamesUsing(function ($modelClass) {
             return 'App\Policies\\' . class_basename($modelClass) . 'Policy'; // 动态返回模型对应的策略名称，如：// 'App\Models\User' => 'App\Policies\UserPolicy',
         });
