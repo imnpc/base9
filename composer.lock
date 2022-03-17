@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "41c5ac1f209f3a2ec6f11c0ec1250b03",
+    "content-hash": "5d4b09f0dd2861f7fb577c0c31f8480a",
     "packages": [
         {
             "name": "aliyuncs/oss-sdk-php",
@@ -2207,6 +2207,54 @@
                 "source": "https://github.com/imnpc/laravel-ueditor/tree/2.0.3"
             },
             "time": "2022-03-15T06:04:38+00:00"
+        },
+        {
+            "name": "imnpc/replay-attack",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/imnpc/replay-attack.git",
+                "reference": "31c1f6f143f338ba13946d087b191ce8368dd112"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/imnpc/replay-attack/zipball/31c1f6f143f338ba13946d087b191ce8368dd112",
+                "reference": "31c1f6f143f338ba13946d087b191ce8368dd112",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.*|6.*|7.*|8.*|9.*|10.*",
+                "php": ">= 7.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Ruogoo\\ReplayAttack\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ruogoo\\ReplayAttack\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "HyanCat",
+                    "email": "hyancat@live.cn"
+                }
+            ],
+            "description": "A laravel package which provide a middleware to prevent replay attack.",
+            "support": {
+                "source": "https://github.com/imnpc/replay-attack/tree/master"
+            },
+            "time": "2022-03-17T08:56:23+00:00"
         },
         {
             "name": "imnpc/ueditor",
@@ -11880,7 +11928,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "imnpc/replay-attack": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

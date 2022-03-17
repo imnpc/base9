@@ -14,6 +14,7 @@
         "guzzlehttp/guzzle": "^7.2",
         "ichynul/configx": "^1.4",
         "ichynul/row-table": "^1.1",
+        "imnpc/replay-attack": "dev-master",
         "imnpc/ueditor": "^3.0",
         "kra8/laravel-snowflake": "^2.1",
         "laminas/laminas-diactoros": "^2.8",
