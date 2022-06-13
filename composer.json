@@ -14,7 +14,7 @@
         "guzzlehttp/guzzle": "^7.2",
         "ichynul/configx": "^1.4",
         "ichynul/row-table": "^1.1",
-        "imnpc/replay-attack": "dev-master",
+        "imnpc/replay-attack": "1.*",
         "imnpc/ueditor": "^3.0",
         "kra8/laravel-snowflake": "^2.1",
         "laminas/laminas-diactoros": "^2.8",
@@ -35,6 +35,7 @@
         "overtrue/laravel-lang": "~6.0",
         "propaganistas/laravel-phone": "^4.3",
         "spatie/laravel-query-builder": "^5.0",
+        "torann/geoip": "^3.0",
         "vinkla/hashids": "^10.0"
     },
     "require-dev": {
@@ -57,7 +58,10 @@
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
-        }
+        },
+        "files": [
+            "bootstrap/helpers.php"
+        ]
     },
     "scripts": {
         "post-autoload-dump": [
