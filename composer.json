@@ -30,10 +30,12 @@
         "laravel/tinker": "^2.7",
         "league/oauth2-server": "^8.3",
         "leonis/easysms-notification-channel": "^2.0",
+        "maatwebsite/excel": "^3.1",
         "mews/captcha": "^3.2",
         "mrlaozhou/laravel-extend": "^1.3",
         "overtrue/laravel-lang": "~6.0",
         "propaganistas/laravel-phone": "^4.3",
+        "psr/simple-cache": "^2.0",
         "spatie/laravel-query-builder": "^5.0",
         "torann/geoip": "^3.0",
         "vinkla/hashids": "^10.0"
@@ -53,15 +55,15 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
         },
         "files": [
             "bootstrap/helpers.php"
         ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
     },
     "scripts": {
         "post-autoload-dump": [
